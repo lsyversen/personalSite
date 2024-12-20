@@ -1,10 +1,10 @@
-import siteMetadata from '@/data/siteMetadata'
-import headerNavLinks from '@/data/headerNavLinks'
-import Image from 'next/image'
-import Link from './Link'
-import MobileNav from './MobileNav'
-import ThemeSwitch from './ThemeSwitch'
-import Snowboard from 'public/static/gifs/snowboard3.gif'
+import siteMetadata from '@/data/siteMetadata';
+import headerNavLinks from '@/data/headerNavLinks';
+import Image from 'next/image';
+import Link from './Link';
+import MobileNav from './MobileNav';
+import ThemeSwitch from './ThemeSwitch';
+import Snowboard from 'public/static/gifs/snowboard3.gif';
 
 const Header = () => {
   return (
@@ -41,7 +41,7 @@ const Header = () => {
         <MobileNav />
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

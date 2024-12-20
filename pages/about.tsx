@@ -1,12 +1,12 @@
-import siteMetadata from '@/data/siteMetadata'
-import { PageSEO } from '@/components/SEO'
-import Image from 'next/image'
-import PageTitle from '@/components/PageTitle'
-import animeTop from '@/data/animeTop'
-import KRool from 'public/static/gifs/krool2.gif'
-import Liam from 'public/static/images/beach.jpg'
-import Snowboard from 'public/static/gifs/snowboard3.gif'
-import Sun from 'public/static/gifs/sun3.gif'
+import siteMetadata from '@/data/siteMetadata';
+import { PageSEO } from '@/components/SEO';
+import Image from 'next/image';
+import PageTitle from '@/components/PageTitle';
+import animeTop from '@/data/animeTop';
+import KRool from 'public/static/gifs/krool2.gif';
+import Liam from 'public/static/images/beach.jpg';
+import Snowboard from 'public/static/gifs/snowboard3.gif';
+import Sun from 'public/static/gifs/sun3.gif';
 
 export default function About() {
   return (
@@ -24,16 +24,16 @@ export default function About() {
           <div>
             <Image src={Liam} width={200} height={250} alt="pinkie" className="rounded-lg" />
           </div>
-          <h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">Liam Ali Syversen</h3>
+          <h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">
+            Liam Ali Syversen
+          </h3>
           <div className="text-gray-500 dark:text-gray-400">Eastern Michigan University</div>
-          <div className="flex space-x-3 pt-6">
-          </div>
+          <div className="flex space-x-3 pt-6"></div>
         </div>
-
-        {/* About Me Text */}
         <div className="pb-8 pt-2 text-lg leading-relaxed text-gray-900 dark:text-gray-300 xl:col-span-2">
-        Hey, I'm Liam! I grew up in Brighton, Michigan and I'm currently in my second year as a
-        computer science student at the Eastern Michigan University.
+          {' '}
+          Hey, I'm Liam! I grew up in Brighton, Michigan and I'm currently in my second year as a
+          computer science student at the Eastern Michigan University.
           <br />
           <br />
           <p className="pb-2">When I'm not studying, you'll probably find me:</p>
@@ -49,7 +49,7 @@ export default function About() {
                 />
               </li>
               <li className="my-0">
-                Planning my next snowboard trip
+                Planning my next snowboard trip{' '}
                 <Image
                   src={Snowboard}
                   alt="loading..."
@@ -58,7 +58,7 @@ export default function About() {
                 />
               </li>
               <li className="my-0">
-                Replenishing my vitamin D deficiency
+                Replenishing my vitamin D deficiency{' '}
                 <Image
                   src={Sun}
                   alt="loading..."
@@ -102,15 +102,8 @@ export default function About() {
               </div>
             ))}
           </div>
-          <a
-            className="no-underline"
-            href="https://open.spotify.com/user/ke17fmzadn03r8cr328qxoguo"
-            target="_blank"
-            rel="noreferrer"
-          >
-          </a>
         </div>
       </div>
     </>
-  )
+  );
 }

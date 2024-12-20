@@ -1,15 +1,15 @@
-import { Inter } from '@next/font/google'
-import SectionContainer from './SectionContainer'
-import { ReactNode } from 'react'
-import Header from './Header'
+import { Inter } from '@next/font/google';
+import SectionContainer from './SectionContainer';
+import { ReactNode } from 'react';
+import Header from './Header';
 
 interface Props {
-  children: ReactNode
+  children: ReactNode;
 }
 
 const inter = Inter({
   subsets: ['latin'],
-})
+});
 
 export default function LayoutWrapper({ children }: Props) {
   return (
@@ -23,5 +23,5 @@ export default function LayoutWrapper({ children }: Props) {
         <div className="grow" />
       </div>
     </SectionContainer>
-  )
+  );
 }

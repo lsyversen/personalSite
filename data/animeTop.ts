@@ -29,6 +29,6 @@ const animeTop = [
     thumbnail: '/static/images/anime/deathnote.jpeg',
     url: 'https://myanimelist.net/anime/1535/Death_Note',
   },
-]
+];
 
-export default animeTop
+export default animeTop;

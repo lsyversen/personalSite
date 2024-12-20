@@ -1,6 +1,6 @@
-import siteMetadata from '@/data/siteMetadata'
-import { PageSEO } from '@/components/SEO'
-import PageTitle from '@/components/PageTitle'
+import siteMetadata from '@/data/siteMetadata';
+import { PageSEO } from '@/components/SEO';
+import PageTitle from '@/components/PageTitle';
 
 export default function Resume() {
   return (
@@ -15,18 +15,15 @@ export default function Resume() {
 
       {/* Resume Text */}
       <div className="prose pb-20 pt-2 text-lg leading-relaxed dark:prose-dark">
-        <h2>Experience</h2>
-        Evenica Corp, Internship, Jan 2024 - Dec 2024
+        <h2>Experience</h2>Evenica Corp, Internship, Jan 2024 - Dec 2024
         <ul className="list-disc space-y-1">
-          <li>
-        Junior Application Developer
-          </li>
+          <li>Junior Application Developer</li>
         </ul>
-        <h2>Education</h2>
-        Eastern Michigan University, B.A. Computer Science, expected May 2026
+        <h2>Education</h2>Eastern Michigan University, B.A. Computer Science, expected May 2026
         <ul className="list-disc space-y-1">
           <li>
-            <span className="font-bold">Coursework: </span> Linux/UNIX I: Fundamentals, Advanced Java Concepts, Java Spring Framework, Web Programming Using PHP and MySQL
+            <span className="font-bold">Coursework: </span>Linux/UNIX I: Fundamentals, Advanced Java
+            Concepts, Java Spring Framework, Web Programming Using PHP and MySQL
           </li>
         </ul>
         <h2>Skills</h2>
@@ -36,12 +33,11 @@ export default function Resume() {
             HTML, CSS, Swift
           </li>
           <li>
-            <span className="font-bold">Frameworks / Technologies: </span> Docker, React, Azure Data Studio, Tailwind CSS,
-            Next.js, Git, GraphQL
+            <span className="font-bold">Frameworks / Technologies: </span> Docker, React, Azure Data
+            Studio, Tailwind CSS, Next.js, Git, GraphQL
           </li>
         </ul>
       </div>
     </>
-  )
+  );
 }
-

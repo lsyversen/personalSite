@@ -76,6 +76,6 @@ const siteMetadata = {
   //     indexName: 'docsearch',
   //   },
   // },
-}
+};
 
-module.exports = siteMetadata
+module.exports = siteMetadata;

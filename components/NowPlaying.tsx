@@ -1,15 +1,15 @@
-import fetcher from 'lib/fetcher'
-import useSWR from 'swr'
-import { motion, AnimatePresence } from 'framer-motion'
+import fetcher from 'lib/fetcher';
+import useSWR from 'swr';
+import { motion, AnimatePresence } from 'framer-motion';
 
 type NowPlayingSong = {
-  album: string
-  albumImageUrl: string
-  artist: string
-  isPlaying: boolean
-  songUrl: string
-  title: string
-}
+  album: string;
+  albumImageUrl: string;
+  artist: string;
+  isPlaying: boolean;
+  songUrl: string;
+  title: string;
+};
 
 function Wave() {
   return (
@@ -36,12 +36,12 @@ function Wave() {
         ))}
       </div>
     </AnimatePresence>
-  )
+  );
 }
 
 export default function NowPlaying() {
-  const { data } = useSWR<NowPlayingSong>('/api/spotify/now-playing', fetcher)
-  if (!data) return null
+  const { data } = useSWR<NowPlayingSong>('/api/spotify/now-playing', fetcher);
+  if (!data) return null;
   return (
     <div className="mb-4 flex w-full flex-row-reverse items-center justify-center space-x-0 sm:flex-row sm:space-x-2">
       {!data?.songUrl ? (
@@ -71,5 +71,5 @@ export default function NowPlaying() {
         <p className="capsize text-subtle max-w-max truncate">{data?.artist ?? 'Spotify'}</p>
       </div>
     </div>
-  )
+  );
 }

@@ -20,6 +20,6 @@ const projectsData = [
     href: 'https://github.com/ytdl-org/youtube-dl',
     projectType: 'oss',
   },
-]
+];
 
-export default projectsData
+export default projectsData;
