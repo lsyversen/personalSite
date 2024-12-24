@@ -37,7 +37,7 @@ export default function About() {
         </div>
         <div className="pb-8 pt-2 text-lg leading-relaxed text-gray-900 dark:text-gray-300 xl:col-span-2">
           {' '}
-          Hey, I'm Liam! I grew up in Brighton, Michigan and I'm currently in my Junior year as a
+          Hi, I'm Liam! I grew up in Brighton, Michigan and I'm currently in my Junior year as a
           computer science student at Eastern Michigan University.
           <br />
           <br />
