@@ -7,20 +7,17 @@ const siteMetadata = {
   headerTitle: 'Liam',
   description: 'A personal website created with Next.js and Tailwind.css',
   language: 'en-us',
-  theme: 'system', // system, dark or light
+  theme: 'system', // system, dark or light 
   siteUrl: 'liamsyversen.dev',
-  siteRepo: 'https://github.com',
-  siteLogo: '/static/images/krool-logo.png',
+  siteRepo: 'https://github.com/lsyversen/personalsite',
+  siteLogo: '/static/images/faputa.png',
   image: '/static/images/beach.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'syversenliam@gmail.com',
-  github: 'https://github.com/',
-  linkedin: 'https://www.linkedin.com',
+  github: 'https://github.com/lsyversen',
+  linkedin: 'https://www.linkedin.com/in/liam-s-47362a214/',
   locale: 'en-US',
   analytics: {
-    // If you want to use an analytics provider you have to add it to the
-    // content security policy in the `next.config.js` file.
-    // supports plausible, simpleAnalytics, umami or googleAnalytics
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
@@ -28,8 +25,6 @@ const siteMetadata = {
     googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
   },
   newsletter: {
-    // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
-    // Please add your .env file and modify it according to your selection
     provider: 'buttondown',
   },
   comments: {

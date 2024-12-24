@@ -3,9 +3,10 @@ import { PageSEO } from '@/components/SEO';
 import Image from 'next/image';
 import PageTitle from '@/components/PageTitle';
 import animeTop from '@/data/animeTop';
+import SocialIcon from '@/components/social-icons'
 import KRool from 'public/static/gifs/krool2.gif';
 import Liam from 'public/static/images/beach.jpg';
-import Snowboard from 'public/static/gifs/snowboard3.gif';
+import Snowboard from 'public/static/gifs/snowboard.gif';
 import Sun from 'public/static/gifs/sun3.gif';
 
 export default function About() {
@@ -28,11 +29,15 @@ export default function About() {
             Liam Ali Syversen
           </h3>
           <div className="text-gray-500 dark:text-gray-400">Eastern Michigan University</div>
-          <div className="flex space-x-3 pt-6"></div>
+          <div className="flex space-x-3 pt-6">
+            <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
+            <SocialIcon kind="github" href={siteMetadata.github} />
+            <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
+          </div>
         </div>
         <div className="pb-8 pt-2 text-lg leading-relaxed text-gray-900 dark:text-gray-300 xl:col-span-2">
           {' '}
-          Hey, I'm Liam! I grew up in Brighton, Michigan and I'm currently in my second year as a
+          Hey, I'm Liam! I grew up in Brighton, Michigan and I'm currently in my Junior year as a
           computer science student at the Eastern Michigan University.
           <br />
           <br />
